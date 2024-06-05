@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style/cadastro2.css">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="row">
+      <div class="form-image">
+        <img src="images/REMIDI logo sem nome.png" alt="logo Remidi" width="72px" height="57px">
+      </div>
+      <div class="form-header">
+        <h1>Cadastre-se</h1>
+      </div>
+      <form action="/cadastrar/persist" method="post">
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">Primeiro Nome</label>
+          <input type="text" class="form-control" id="firstname" name="primeiroNome" placeholder="Digite seu Primeiro Nome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="lastname" name="sobrenome" placeholder="Digite seu Sobrenome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="date" class="form-label">Data de Nascimento</label>
+          <input type="date" class="form-control" id="date" name="dataNascimento" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputPassword4" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <div class="col-md-6">
+          <label for="inputConfirmPassword4" class="form-label">Confirme a Senha</label>
+          <input type="confirmPassword" class="form-control" id="inputConfirmPassword4" name="confirmSenha" placeholder="Confirme sua senha" required>
+        </div>
+        <div class="question-title py-3" >
+          <h6>Qual Remidi você frequenta?</h6>
+        </div>
+        <div class="question-group">
+          <div class="question-input">
+            <input type="radio" id="goiania" name="freqRemidi" value="goiania" required>
+            <label for="goiania">Goiânia</label>
+          </div>
+          <div class="question-input">
+            <input type="radio" id="querencia" name="freqRemidi" value="querencia" required>
+            <label for="querencia">Querência</label>
+          </div>
+          <div class="question-input">
+            <input type="radio" id="other" name="freqRemidi" value="other" required>
+            <label for="other">Outros</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-warning mt-3 mb-4">Cadastrar</button>
+      </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        backdrop-filter:  blur(10px);
+    }
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+img {
+    width: 60px;
+    height: 70px;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.avisos-area{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 183);
+    outline: #46380d;
+    border-radius: 10px;
+    border: #000;
+}
+
+.feed-area{
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: auto 5;
+    outline: #000;
+    border-radius: 10px;
+    border: #000;
+    
+}
+
+.bday-area{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 252, 190);
+    outline: rgb(3, 83, 3);
+    border-radius: 10px;
+    border: #000;
+
+}
+
